@@ -1,29 +1,41 @@
-def add(a,b)
-	return a + b
+def add(a, b)
+	a + b
 end
 
-def subtract(c,d)
-	return c - d
+def subtract(a, b)
+	a - b
 end
 
-def sum(f)
+def sum(a)
 	sum = 0
-	f.each do |num|
+	a.each do |num|
 		sum += num
 	end
 	return sum
 end
 
-def multiply(arr)
+def multiply(a)
 	product = 1
-	arr.each do |numb|
-		product *= numb
+	a.each do |num|
+		product *= num
 	end
 	return product
 end
 
-def power(x)
-	return x**2
+def power(a)
+	a ** 2
 end
 
-
+def factorial(x)
+	product = 1
+	counter = 1
+	if x == 0
+		product = 1
+	elsif x > 0
+		while counter <= x
+			product *= counter
+			counter += 1
+		end
+	end
+	return product
+end
