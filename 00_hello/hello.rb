@@ -1,9 +1,7 @@
-def hello 
+def hello
 	"Hello!"
 end
 
-def greet(person)
-	"Hello, " + person + "!"
+def greet(name)
+	"Hello, #{name}!"
 end
- 
-

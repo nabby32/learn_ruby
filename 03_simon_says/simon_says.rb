@@ -1,39 +1,37 @@
-def echo(input)
-	input.to_s
+def echo(a)
+	a.to_s
 end
 
-def shout(hey)
-	hey.to_s.upcase
+def shout(a)
+	a.to_s.upcase
 end
 
-def repeat(umum, y = 2)
-	new = ((umum + " ") * y)
-	new[0..-2]
+def repeat(a, y=2)
+	answer = (a + " ") * y
+	return answer[0..-2]
 end
 
-def start_of_word(word, number)
-	
-	word[0, number]
+def start_of_word(a, b)
+	return a[0..b-1]
 end
 
-def first_word(string)
-	st_array = string.split(" ")
-	return st_array[0]
+def first_word (a)
+	array = a.split(" ")
+	return array[0].to_s
 end
 
-def titleize(word)
-	st_array = word.split(" ")
-	st_array.each do |wrd|
-		if wrd != st_array[0]
-			if wrd != "and" and wrd != "the" and wrd != "or"
-				wrd.to_s.capitalize!
-			end
-		else
-			wrd.to_s.capitalize!
+def titleize(a)
+	array = a.split(" ")
+	exlusions = %w(and the)
+	array.each do |word|
+		if word == array[0]
+		next
+		elsif
+
+		
 		end
 	end
-	st_array.join(" ")
+	array.join(" ")
 end
-
 
 
